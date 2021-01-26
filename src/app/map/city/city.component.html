@@ -1,0 +1,17 @@
+<div class="row">
+    <h3>ŞŞehirler</h3>
+<div class="col-md-12">
+    <ul>
+        <li *ngFor="let city of cities">
+            {{city.id}} - {{city.name}}
+        </li>
+    </ul>
+</div>
+<div class="col-md-12">
+   
+   id:<input id="id" type="text" [(ngModel)]="city.id">
+   <br>
+    name: <input type="text" [(ngModel)]="city.name">
+   <button (click)="save()">Kaydet</button>
+</div>
+</div>
